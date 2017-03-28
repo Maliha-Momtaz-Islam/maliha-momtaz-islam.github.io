@@ -1,0 +1,35 @@
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/17/12/46/blowfly-2151453_960_720.jpg);
+
+}
+/*div p{
+  background-color: #b61fc6;
+    font-size: x-large;
+}
+div > p{
+  background-color: #92d433;
+  font-size: 10pt;
+  border-style: solid;
+  border-color: #060606;
+  border-width: thick;
+  width: 200px;
+
+}
+
+div{width: 50%;}*/
+div p{background-color: #3290de;}
+#content{background-color:#bb2993; }
+p{
+  background-color:#d1ad2a;
+  font-size: 1em;
+  /*the font size is mentioned under this general rule won't
+  be overridden by any other more important rule because
+  no other rule is targeting to stylize the font size.
+  thus the font size will be applied
+  from this generic rule.*/
+}
+img[alt=spacer]{
+  width: 93;
+  height: 95;
+
+}

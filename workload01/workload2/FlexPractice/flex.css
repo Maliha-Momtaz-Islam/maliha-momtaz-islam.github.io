@@ -1,0 +1,56 @@
+.flex-container {
+    display: flex;/*flex  display
+     সিলেক্ট না করলে Div তার স্বভাবসুলভ হরাইজেন্টালি
+     যতটুকু জায়গা পাবে ততটুকু জায়গা নিয়ে নিবে
+     আর কন্টেইনারের মধ্যে প্রতিটা Div
+     পর পর এক্টারপরে আরেকটা কলামে সাজনো  থাকবে  */
+
+    flex-direction:row;/*flex direction কন্টেইনাররের ভিতরে বক্স গুলা
+    হরাইজেন্টালি(row) সাজানো থাকবে নাকি ভারটিক্যালি (coloumn) বরাবর সাজানো
+    থাকবে  সেটা ডিসাইড করবে */
+
+    flex-wrap: wrap;   /*flex wrap  ইউজ নাকরলে
+     flex কন্টেইনার horizentally যতটুকু জায়গা
+     নেয়া সম্ভব নিয়ে নিবে,পুরা পেইজ জুড়ে আর থাকবে না*/
+    justify-content:space-around;/*পুরা কন্টেইনারনারটা পেজের সেন্টারে চলে আসবে
+    আর কন্টেওিনারের ভিতরে থাকা Div গুলার মধ্যে কোন ফাকা জায়গা থাকবে না */
+    /*justify-content:flex-end;/*পুরা কন্টেইনারনারটা পেজের right side e
+    চলে আসবে আর কন্টেওিনারের ভিতরে থাকা Div গুলার মধ্যে কোন ফাকা জায়গা থাকবে না */
+    /*justify-content:flex-start;পুরা কন্টেইনারনারটা পেজের left side e
+    চলে আসবে আর কন্টেওিনারের ভিতরে থাকা Div গুলার মধ্যে কোন ফাকা জায়গা থাকবে না */
+    /*justify-content:space-around;পুরা কন্টেইনারনারটা পেজের middle e
+    চলে আসবে আর কন্টেওিনারের ভিতরে থাকা Div গুলার মধ্যে কোন ফাকা জায়গা থাকবে*/
+    /*justify-content:space-between;পুরা কন্টেইনারনারটা পেজের middle e
+    চলে আসবে আর কন্টেওিনারের ভিতরে থাকা Div কলাম গুলোর
+    মধ্যে বেশি জায়গা রেখ এ লেফট আর রাইট সাইডে সামান্য মার্জিন রাখবে */
+    align-items:center;/*পুরা কন্টেইনারনারটা vertically পেজের সেন্টারে
+    চলে আসবে আর কন্টেওিনারের ভিতরে থাকা Div গুলার
+    মধ্যে কোন ফাকা জায়গা থাকবে না */
+    min-height: 100px;
+    align-content:space-around;
+    border: solid 5px rgb(242, 11, 65);
+}
+
+.flex-item {
+    min-height: 200px;
+    min-width: 100px;
+    padding: 20px;
+    border: 1px solid #000;
+    flex-grow: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.flex-item:nth-of-type(odd) {
+    flex-grow: 7;
+    align-self:center;
+}
+
+.flex-item:nth-of-type(1) { order: 1}
+.flex-item:nth-of-type(2) { order: 2}
+.flex-item:nth-of-type(3) { order: 3}
+.flex-item:nth-of-type(4) { order: 4}
+.flex-item:nth-of-type(5) { order: 5}
+.flex-item:nth-of-type(6) { order: 6}
+.flex-item:nth-of-type(7) { order: 7}
+.flex-item:nth-of-type(8) { order: 8}

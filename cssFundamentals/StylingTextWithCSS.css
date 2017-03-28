@@ -1,0 +1,43 @@
+body
+{
+    background:#cccc99;
+    font-family: Helvetica,serif,sans-serif,'Times New Roman';
+/*in font family browser will try to find helvetica first
+if found then it'll render the page with helvetica font family
+otherwise serif, sans-serif or times new roman will be
+used to render as per availability in the user's system*/
+    font-size: .85em; /*relative measure of font size*/
+  }
+
+  h1
+  {
+    font-family: serif,'Times New Roman';
+    font-size: 1.2em;
+    letter-spacing: 1em;/*it is a text property
+    it is used to push apart the letters
+    used in headers for some website
+    */
+    word-spacing: 2em;/*same as letter spacing
+    although it pushes the words apart,text property*/
+    text-align: center;
+  }
+.code{
+  font-family: monospace;
+  font-size: 0.9em;
+  
+}
+ol{
+  font: italic .98em serif;
+}
+.content
+{
+    background: #eeeecc;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.copyright{
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+body{
+margin: 0px;padding: 0px;
+}
+#header{
+  text-align: center;
+  word-spacing: .8em;
+  /*background-color: red;*/
+  height: 100px;
+}
+#authorinfo{
+  margin-left: 605px;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  width: 300px;
+  border: solid 1px black;
+}
+#links{
+  border: solid 1px black;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+    width: 150px;
+}
+
+#content{
+
+  padding: 10px;
+  border: solid 1px black;
+  margin-left: 150px;
+  margin-right: 305px;
+}
+#figure1{
+  width: 300px;
+  height: 300px;
+  padding: 4px;
+}

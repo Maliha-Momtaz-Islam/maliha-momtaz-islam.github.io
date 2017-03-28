@@ -1,0 +1,54 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-size: 1em;
+  background-color:#36eed0;
+}
+.menu{
+  list-style: none;
+  text-align: center;
+}
+.menu li:nth-child(3){
+  background-color: #d7ed7e;
+  /*padding: 20px;i am pushing the content "blueprint"
+  inwards away from the border, to inner region of the box*/
+  /*margin:40px;i am pushing the border of the 3rd child's
+  box from other children's box*/
+  /*display: none; list theke 3rd child ke totally gayeb kore dibe*/
+  /*visibility: hidden; dekhabe je kichu ekta ase but childke
+  hide kore rakhbe*/
+
+}
+
+.menu li:hover{
+  background-color: #ebff4a;
+}
+
+.menu li{
+  display: inline-block;
+  background-color: #d7ed7e;
+  /*padding: 20px;i am pushing the content "blueprint"
+  inwards away from the border, to inner region of the box*/
+  /*margin:40px;i am pushing the border of the 3rd child's
+  box from other children's box*/
+  border-bottom: 3px solid black;
+/*  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 3px;*/
+  width: 180px;
+  text-align: center;
+  /*border-left: 5px solid #848187;Not liking the left border for a menu*/
+  /*margin: 5px;*/
+  padding: 3px 0 0 20px;
+  /*display: inline; width won't work on inline display charactarestic*/
+  /*display: inline-block; width will be applicable and
+  also they'll size down according to screen size*/
+
+}
+.menu li a{
+  text-decoration: none;
+  color: black;
+
+}

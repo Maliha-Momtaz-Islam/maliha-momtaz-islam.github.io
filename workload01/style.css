@@ -1,0 +1,441 @@
+/* ---------------------------------------------------
+                     COLOR GUIDE
+
+GOLD: rgb(172, 140, 71)
+WHITE: rgb(226, 226, 226)
+GREY: rgb(128,128,128)
+BLACK: rgb(15,15,15)
+      rgba(15,15,15, 0.74)
+
+----------------------------------------------------*/
+
+/* ---------------------------------------------------
+                      GLOBAL STYLES
+----------------------------------------------------*/
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  font-family: "alegreya",helvetica,sans-serif,serif;
+  font-size: 17px;
+  color: rgb(226, 226, 226);
+  background-color: black;
+  background-image: url(imgages/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  padding: .2% .2% .2% .2%;*/
+}
+.document_container{
+   background: rgb(10,10,10); /*IE8 */
+  background: rgba(10, 10, 10, 0.84);
+  padding: 30px;
+    background-size: cover;
+}
+h2,h3,h4{
+  font-family: "alegreya sc","Times New Roman",sans-serif;
+}
+h2{
+  margin-top: 0.4219em;
+  margin-bottom: 0px;
+
+  font-size: 2.3684em;
+  line-height: 1.2655em;
+}
+h3{
+  margin: 0.4219em auto 0.4219 auto;
+
+  font-size: 1.5em;
+  line-height: 1.2558em;
+}
+h4{
+  margin: 0.9310em;
+  margin-bottom: 0em;
+
+  font-size: 1.5263em;
+  font-weight: normal;
+  line-height: 1.86em;
+}
+p{
+  margin-top: 1.4211em;
+  margin-bottom: 0em;
+
+  font-size: 1em;
+  line-height: 1.4211em;
+}
+img{
+  width: 100%;
+}
+a:link {
+  color:rgb(180,180,180);
+  text-decoration: none;
+}
+a:visited {
+    color: rgb(100, 81, 41);
+  }
+a:hover {
+    color: rgb(224, 182, 90);
+  }
+a:active {
+    color: rgb(252, 217, 142);
+  }
+  /* ---------------------------------------------------
+                        LOGO STYLES
+  ----------------------------------------------------*/
+  .logo{
+    display: block;
+    width: 65px;
+  /*  margin: -25 0 auto 35px;*/
+    float: left;
+    margin-left: 45px;
+    margin-top: -28px;
+
+    /*border: solid 1px white;shit*/
+  }
+
+      .logo img{
+        height: 70px;
+        width: 70px;
+      }
+  /* ---------------------------------------------------
+                     Navigation STYLES
+  ----------------------------------------------------*/
+.nav_bar ul li{
+  list-style:none;
+  text-align: center;
+  float: left;
+  margin: auto 30px 40px;
+  /*border: solid 1px white;shit*/
+}
+.nav_bar ul li a{
+
+  display: block;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  width: 90px;
+  color:rgb(180,180,180);
+  font-size: 13px;
+
+}
+
+.nav_bar ul li a:hover{
+
+  background-color:  rgb(224, 182, 90);
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  color:rgb(15,15,15);
+  width: 90px;
+}
+
+
+.nav_bar ul li input[type="search"]{
+  width: 180px;
+  height: 25.8px;
+  color: rgb(224, 182, 90);
+  margin-top: -11px;
+  margin-left: 8px;
+  margin-right: 5px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  text-align: center;
+
+}
+
+.nav_bar ul li button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px;
+  width: 110px;
+  text-align: center;
+}
+
+.nav_bar ul li button:hover{
+
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------
+       Secondary Header Navigation Styles
+----------------------------------------------------*/
+.SecondaryNavSection{
+
+  position: absolute;
+  top:19px;
+  left: inherit;
+  padding: .05px;
+  padding-left: inherit;
+  width: 100%;
+  background-color: inherit;
+}
+.SecondaryNavSection hgroup h1{
+    float: left;
+  /*  border: solid 1px white;*/
+    position: absolute;
+    top:36px;
+    left: inherit;
+    background-color:rgba(10, 10, 10, 0.99);
+
+    width: 100%;
+    font-size: 1.8em;
+    margin-left: -32px;
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.SecondaryNavSection hgroup h2
+{
+    float: left;
+    /*border: solid 1px white;*/
+    position: absolute;
+    font-size: 13px;
+    top:77px;
+    left: 190px;
+}
+/* ---------------------------------------------------
+              Banner STYLES
+----------------------------------------------------*/
+
+figure{
+/*  clear: both;
+  position: absolute;
+  top: 40%;
+  left:0px;*/
+
+}
+
+figure img{
+
+}
+
+figure figcaption h2,h3{
+
+}
+
+figure figcaption p{
+
+}
+
+/* ---------------------------------------------------
+                      GLOBAL FOOTER STYLES
+----------------------------------------------------*/
+footer {
+  padding: 10px 0;
+
+}
+
+  footer h4 {
+    text-transform: uppercase;
+
+  }
+
+  footer p {
+    margin: 0;
+  }
+  footer img{
+    display: block;
+    margin: 0 auto;
+    height:30px;
+    width: 27px;
+    float: left;
+  }
+  #footnav h4 a{
+    font-size: 17px;
+    text-transform: lowercase;
+    display: block;
+    height:30px;
+    width: 27px;
+    margin-bottom: 20px;
+    float: left;
+  }
+#footnav p{ float: left;}
+
+
+
+
+/*#navbar3{
+  position: absolute;
+  z-index:999999;
+  top: 240%;
+  left: 0px;
+
+  width: 100%;
+  height: 9%;
+
+  background-color: #c653de;
+}*/
+
+/*#logo{
+  position: relative;
+  z-index: 8888;
+  top: 5px;
+  left:5px;
+}*/
+/*nav{
+  position: absolute;
+  z-index: 888;
+  top: 0%;
+
+  width: 100%;
+  height: 10%;
+
+  background-color: #07346f;
+}
+
+nav > ul{
+  margin-top: 15px;
+
+  list-style: none;
+
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+
+  width: 10%;
+
+
+  text-align: center;
+  word-spacing: 3px;
+  text-overflow: clip;
+
+  background-color: #07346f;
+
+}
+
+nav ul li:first-child:hover{
+  background-color: #222226;
+}
+
+nav ul li a{
+  text-align: center;text-decoration: none;
+
+color: #4ca3da;
+
+}
+
+
+
+input[type=search]{
+	color:#bcbcbc;
+}
+
+#search-data{
+position: absolute;
+z-index: 8888;
+top: 11px;
+right: 50px;
+
+width: 11%;
+
+}
+
+hgroup{
+  position: absolute;
+  top: 9%;
+
+  width: 100%;
+  height: 20%;
+
+  background-color: orange;
+}
+/*#HeroContent{
+  position: absolute;
+  top: 20%;
+
+  width: 100%;
+  height:30%;
+
+  background-image: url(imgs/banner.jpg);
+
+}
+
+.main_content{
+  position: absolute;
+  top: 55%;
+
+  width: 100%;
+  height: 150%;
+
+  background-color: #8b8f83;
+
+
+}
+.side_bar{
+  float: right;
+
+  width: 30%;
+
+}
+#catagories{
+  position: absolute;
+  top: 55%;
+  left: 77%;
+
+  width: 23%;
+  height: 80%;
+
+  background-color: #88f235;
+}
+
+#expedia_advertisement{
+  position: absolute;
+  top:100%;
+  left:77%;
+
+  width:23%;
+  height: 30%;
+
+  background-color: #32dfdf;
+}
+#featured_countries{
+  position: absolute;
+  top: 130%;
+  left: 77%;
+
+  width: 23%;
+  height: 40%;
+
+  background-color: #ee1df4;
+}
+#comment_section{
+  position: absolute;
+  top: 168%;
+  left:77%;
+
+  width: 23%;
+  height: 37%;
+
+  background-color: #25bcf4;
+}
+
+#pagenum{
+   position: absolute;
+   z-index:999;
+   top: 205%;
+   left: 0px;
+
+   width: 100%;
+   height: 30%;
+
+   background-color: #f1e085;
+}
+*/

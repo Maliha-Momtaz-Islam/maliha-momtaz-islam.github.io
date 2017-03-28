@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A simple page</title>
+    <link rel="stylesheet" href="CascadingAndInheritance.css" type="text/css" />
+</head>
+
+<body>
+    <h1>Today's Quote</h1>
+    <div>
+        <p class="quotaiton">
+            ""... there is no freedom quite like the freedom of being </br>
+            conatantly understand",
+            being styled by both div and &lt;p&gt;selector<br/> Scott Lynch<em>,The Lies of Locks Lamora</em>
+        </p>
+    </div>
+    <hr>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <img src=".\img\81.jpg" alt="spacer" />
+    <div>
+        <form>
+            <p>I am a decendent of the div but i am not directly beneath div
+            by both div and &lt;p&gt;selector</p>
+        </form>
+        <p>i am direct beneath div and i am a decendent of the div that means i am the child of div
+        by both div and &lt;p&gt;selector. i can also be styled by div &gt; p selector</p>
+    </div>
+
+    <div style="background-color:black">A div</div>
+    <!--the style attribute is the most important rule above all-->
+    <p class="quotaiton">A Paragraph being styled by only &lt;p&gt;selector</p>
+
+    <div>
+        <p>A paragraph inside a div</p>
+    </div>
+    <div>
+        <p id="content"> Hello i am the targetted paragraph
+          and i am supposed to have the background colour with
+          higher specificity rating of the style rule
+          where various style rules are targetting same poor
+          me , the paragraph type selector under the div
+          type selector. Let's see which rule wins.
+
+          the secret to win is you have to be very very specific
+          while targeting any html element.
+
+          id has the highest specificity rating thus i am coloured by id selector #.
+        </p>
+    </div>
+    <!---it has an id property to it now, so all my paragraph
+    tags doesn't need to have same property-->
+</body>
+
+</html>

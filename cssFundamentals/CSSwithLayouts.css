@@ -1,0 +1,36 @@
+#buttons{
+  margin: 100px 0 100px 0;
+
+}
+#buttons input{
+  width: 120px;
+
+}
+#buttons input:last-child{
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+/*#buttons input:first-child{
+  position:absolute;
+  top: 10px;
+  right: 40px;
+}*/
+#buttons input:nth-child(2n+2){
+  position: fixed;
+  top: 40px;
+  left: 50px;
+}
+#figure1{
+  float: left;
+  margin-right: 10px;
+
+}
+.clear{
+  clear: both;
+}
+#figname{
+  position: relative;
+  top: 240px;
+  left:-295px;
+}
